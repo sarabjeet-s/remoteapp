@@ -65,6 +65,18 @@ module.exports = {
       exposes: {
         "./AppComponent": "./src/App.js",
       },
+      shared: {
+        react: {
+          singleton: true,
+          eager: true,
+          requiredVersion: "^18.3.1",
+        },
+        "react-dom": {
+          singleton: true,
+          eager: true,
+          requiredVersion: "^18.3.1",
+        },
+      },
       // shared: ["react", "react-dom"],
     }),
   ],
